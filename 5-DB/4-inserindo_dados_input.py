@@ -9,21 +9,17 @@ Cursor é um interador que permite navegar e manipular os registros em um Banco 
 '''
 cursor = connection.cursor()
 
-# 3 - Inserindo Dados
-cursor.execute("""
-    INSERT INTO movies (name, year, score)
-        VALUES ('Super Mario Bross', 2023, 10)
-                """)
+# 3 - Solicitando Dados do Usuário
+name = input("Nome do Filme \n")
+year = int(input("Ano do Filme \n"))
+score = float(input("Nota do Filme \n"))
 
+# 4 - Inserindo Dados
 cursor.execute("""
     INSERT INTO movies (name, year, score)
-        VALUES ('João e Maria', 1999, 9)
-                """)
+    VALUES  (?, ?, ?)
+                """, (name, year, score))
 
-cursor.execute("""
-    INSERT INTO movies (name, year, score)
-        VALUES ('A bela e a fera', 2000, 8)
-                """)
 
 # 4 - Gravando Dados no BD
 connection.commit()

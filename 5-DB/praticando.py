@@ -1,18 +1,17 @@
 import sqlite3
 
-connection = sqlite3.connect("meu_db.db")
+connection = sqlite3.connect("meu_bando_de_dados.db")
 
 cursor = connection.cursor()
 
 cursor.execute("""
-    CREATE TABLE clientes(
-                id          SERIAL,
-                nome        VARCHAR(30) NOT NULL,
-                telefone    INTEGER     NOT NULL,
-                email       VARCHAR(30) NOT NULL,
-                observacoes TEXT
-                            );
+    CREATE TABLE meu_dados (
+               id       SERIAL      NOT NULL,
+               nome     VARCHAR(60) NOT NULL,
+               cpf      INTEGER     NOT NULL,
+               telefone INTEGER     NOT NULL
+               );
                 """)
 
-print("Tabela criado com sucesso!")
 cursor.close()
+print("Tabela criada com sucesso!")

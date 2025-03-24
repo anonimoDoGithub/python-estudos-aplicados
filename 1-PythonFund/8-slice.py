@@ -24,5 +24,5 @@ passo - Determina o incremento. Por padrão esse número é o 1.
 # 4 - Busque toda string de 2 em 2 caracteres
 print(numeros[::2])
 
-# 5 - Busque todaa string nos índices ímpares
+# 5 - Busque toda string nos índices ímpares
 print(numeros[1::2])

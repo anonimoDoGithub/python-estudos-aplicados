@@ -12,7 +12,7 @@ buscarConvidado = input("Digite o nome do convidado: ")
 convidadoEncontrado = listaConvidados.index(buscarConvidado)
 print(f"Convidado(a), {buscarConvidado} encontrado, número {convidadoEncontrado} na lista.")
 
-# 3 - append Adicionar item ao final da lista
+# 3 - append() Adicionar item ao final da lista
 adicionarConvidado = input("Informe o convidado que deseja adicionar: ")
 convidadoAdicionado = listaConvidados.append(adicionarConvidado)
 print(f"Convidado(a) {adicionarConvidado}, adicionado a lista!")

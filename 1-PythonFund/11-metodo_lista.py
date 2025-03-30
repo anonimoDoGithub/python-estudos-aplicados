@@ -1,5 +1,5 @@
 # Inicio do estudo das COLEÇÕES em Python
-# Em uma LISTA Podemos armazenar dados HETEROGÊNEOS["Fifa 23", 2025, 10.0, True] Ex: 'String', int, float, bolean
+# Em uma LISTA podemos armazenar dados HETEROGÊNEOS["Fifa 23", 2025, 10.0, True] Ex: 'String', int, float, bolean
 
 listaConvidados = ["Zeca", "Ana", "Margarida", "João", "Mauro", "Juliana", "Maria", "Jorge", "Antônia", "Ricardo", "Joana"]
 print(listaConvidados)
